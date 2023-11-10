@@ -24,7 +24,7 @@
         }
 
         h1 {
-            color: #e44d26;
+            color: rgb(8, 8, 39);
         }
 
         #birthday-message {
@@ -39,7 +39,7 @@
         }
 
         #birthday-button {
-            background-color: #e44d26;
+            background-color: rgb(8, 8, 39);
             color: #ffffff;
             padding: 10px 20px;
             font-size: 1em;
@@ -48,29 +48,10 @@
             cursor: pointer;
             margin-top: 20px;
         }
-        #birthday-song {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        #play-button {
-            background-color: white;
-            color: #e44d26;
-            padding: 10px 20px;
-            font-size: 1em;
-            border: #e44d26;
-            border-style: outset;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-        #song-button {
-            display: none;
-        }
     </style>
 </head>
 <body>
     <div id="birthday-container">
-        <button id="play-button">Press Me!</button>
         <h1>Happy Birthday, Siro!</h1>
         <div id="birthday-message">
             <p>The guy who can charm me from across the room with just a smile.</p>
@@ -80,25 +61,7 @@
         <button id="birthday-button" onclick="showBirthdayWish()">Show Birthday Wish</button>
     </div>
 
-    <div id="song-button">
-        <audio id="birthday-song" controls>
-            <source src="./assets/birthday.mp3" type="audio/mp3">
-        </audio>
-    </div>
-
     <script>
-        document.getElementById('play-button').addEventListener('click', function() {
-            var audio = document.getElementById('birthday-song');
-
-            // Check if the audio is paused
-            if (audio.paused) {
-                audio.play();
-                this.innerText = 'Pause Birthday Song';
-            } else {
-                audio.pause();
-                this.innerText = 'Play Birthday Song';
-            }
-        });
         function showBirthdayWish() {
             alert("Happy Birthday! 🎉🎂 Sending you lots of love and good vibes on your special day! Terimakasi sudah menjadi orang yang sangat baik hingga menginjak umur ke-23 tahun ini. Semoga kedepannya semakin baik lagi, baik dari segi kesehatan, rejeki, pekerjaan, relationship and whatever u do pokoknya! Semoga aku bisa terus jadi tempatmu pulang sampai saat tua nanti, xixi. Aku tau umur 23 sudah bukan lagi umur haha-hihi. Aku tau kamu lagi proses mencari jati diri. Lakuin apapun yang kamu mau, jangan pernah menganggap diri sendiri rendah. Aku sangat amat yakin kamu akan menjadi orang yang sangat sukses. Kamu punya potensi, hanya saja butuh waktu buat gali. Semangat terus yaaa!!! Semoga (lagi) dengan bertambahnya usia ini semakin membuat kamu semangat buat mengejar apapun yang kamu mau buat masa depanmu. Enjoy your life and once again, happy birthday :) ! xoxo,");
         }
