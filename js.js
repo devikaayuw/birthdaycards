@@ -90,3 +90,7 @@ const bdayBallons = (function(){
         balloonAnimation.onfinish = () => { releaseBalloon(balloon) }
     }
 })();
+
+function showBirthdayWish() {
+            alert("Happy Birthday! 🎉🎂 Sending you lots of love and good vibes on your special day! Terimakasi sudah menjadi orang yang sangat baik hingga menginjak umur ke-23 tahun ini. Semoga kedepannya semakin baik lagi, baik dari segi kesehatan, rejeki, pekerjaan, relationship and whatever u do pokoknya! Semoga aku bisa terus jadi tempatmu pulang sampai saat tua nanti, xixi. Aku tau umur 23 sudah bukan lagi umur haha-hihi. Aku tau kamu lagi proses mencari jati diri. Lakuin apapun yang kamu mau, jangan pernah menganggap diri sendiri rendah. Aku sangat amat yakin kamu akan menjadi orang yang sangat sukses. Kamu punya potensi, hanya saja butuh waktu buat gali. Semangat terus yaaa!!! Semoga (lagi) dengan bertambahnya usia ini semakin membuat kamu semangat buat mengejar apapun yang kamu mau buat masa depanmu. Enjoy your life and once again, happy birthday :) ! xoxo,");
+        }
