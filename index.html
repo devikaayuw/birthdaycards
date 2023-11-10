@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Happy Birthday!</title>
     <style>
         @import url(https://fonts.googleapis.com/css?family=Poppins:300);
@@ -48,6 +49,22 @@
             cursor: pointer;
             margin-top: 20px;
         }
+        #balloon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: floatAnimation 5s infinite alternate;
+    }
+
+    @keyframes floatAnimation {
+      0% {
+        transform: translate(-50%, -50%) translateY(0);
+      }
+      100% {
+        transform: translate(-50%, -50%) translateY(-20px);
+      }
+    }
     </style>
 </head>
 <body>
@@ -61,7 +78,7 @@
         <button id="birthday-button" onclick="showBirthdayWish()">Show Birthday Wish</button>
     </div>
 
-    <script>
+    <script src="js.js">
         function showBirthdayWish() {
             alert("Happy Birthday! 🎉🎂 Sending you lots of love and good vibes on your special day! Terimakasi sudah menjadi orang yang sangat baik hingga menginjak umur ke-23 tahun ini. Semoga kedepannya semakin baik lagi, baik dari segi kesehatan, rejeki, pekerjaan, relationship and whatever u do pokoknya! Semoga aku bisa terus jadi tempatmu pulang sampai saat tua nanti, xixi. Aku tau umur 23 sudah bukan lagi umur haha-hihi. Aku tau kamu lagi proses mencari jati diri. Lakuin apapun yang kamu mau, jangan pernah menganggap diri sendiri rendah. Aku sangat amat yakin kamu akan menjadi orang yang sangat sukses. Kamu punya potensi, hanya saja butuh waktu buat gali. Semangat terus yaaa!!! Semoga (lagi) dengan bertambahnya usia ini semakin membuat kamu semangat buat mengejar apapun yang kamu mau buat masa depanmu. Enjoy your life and once again, happy birthday :) ! xoxo,");
         }
